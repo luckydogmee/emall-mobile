@@ -1,10 +1,15 @@
 <template>
-    <div>这里是首页</div>
+    <div>
+        <ySearch :showPanel=true />
+    </div>
 </template>
 <script>
+    import ySearch from '@/baseComponents/ySearch'
     export default {
         name: "home",
-        
+        components:{
+            ySearch
+        }
     };
 </script>
 
